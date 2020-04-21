@@ -67,11 +67,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:id="@+id/cardHolder"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="54dp"
+                    android:id="@+id/availableCard"
                     app:cardBackgroundColor="#FFFFFF"
                     app:contentPadding="10dp">
 
@@ -104,14 +106,15 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:id="@+id/amount"
+                            android:id="@+id/totalAmount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="start"
-                            android:text="#2000"
+                            android:text="₦2000"
                             android:textColor="#000000"
                             android:textSize="16sp"
+
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -130,6 +133,7 @@
                     app:contentPadding="10dp">
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
+                        android:id="@+id/recyID"
                         android:layout_height="wrap_content"
                         tools:listitem="@layout/single_card"
                         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -379,10 +383,9 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="320dp"
                     app:cardBackgroundColor="#FFFFFF"
                     app:contentPadding="10dp">
-
 
                     <com.github.mikephil.charting.charts.PieChart
                         android:layout_width="match_parent"
