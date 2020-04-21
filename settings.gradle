@@ -1,0 +1,2 @@
+rootProject.name='Kliqr Demo Application'
+include ':app'

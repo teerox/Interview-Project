@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home_button">
+    <fragment
+        android:id="@+id/home_button"
+        android:name="com.example.kliqrdemoapplication.screens.OverViewFragment"
+        android:label="Overview"
+        tools:layout="@layout/fragment_over_view" />
+    <fragment
+        android:id="@+id/bankAccount_button"
+        android:name="com.example.kliqrdemoapplication.screens.BankAccountFragment"
+        android:label="Budget"
+        tools:layout="@layout/fragment_bank_account" />
+    <fragment
+        android:id="@+id/budget_button"
+        android:name="com.example.kliqrdemoapplication.screens.BudgetFragment"
+        android:label="Bank Accounts"
+        tools:layout="@layout/fragment_budget" />
+    <fragment
+        android:id="@+id/trascation_button"
+        android:name="com.example.kliqrdemoapplication.screens.TransactionFragment"
+        android:label="Transaction"
+        tools:layout="@layout/fragment_transaction" />
+</navigation>

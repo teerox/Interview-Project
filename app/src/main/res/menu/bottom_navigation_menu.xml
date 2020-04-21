@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_button"
+        android:icon="@drawable/ic_filter_none_black_24dp"
+        android:title="OVERVIEW" />
+    <item
+        android:id="@+id/budget_button"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="BUDGET" />
+    <item
+        android:id="@+id/bankAccount_button"
+        android:icon="@drawable/credit_card_multiple"
+        android:visible="true"
+        android:title="BANK ACCOUNT" />
+    <item
+        android:id="@+id/trascation_button"
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        android:title="TRANSACTION" />
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/overview"
+        android:icon="@drawable/ic_filter_none_black_24dp"
+        android:iconTint="#757575"
+        android:title="OverView"/>
+    <item android:id="@+id/budget"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:iconTint="#757575"
+        android:title="Budget"/>
+    <item android:id="@+id/bankAccount"
+        android:icon="@drawable/credit_card_multiple"
+        android:iconTint="#757575"
+        android:title="Bank Account"/>
+    <item android:id="@+id/bills"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:iconTint="#757575"
+        android:title="Bills"/>
+    <item android:id="@+id/transaction"
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        android:iconTint="#757575"
+        android:title="Budget"/>
+    <item android:id="@+id/trend"
+        android:icon="@drawable/ic_trending_up_black_24dp"
+        android:title="Trends"/>
+    <item android:id="@+id/paybill"
+        android:icon="@drawable/calendar_month_outline"
+        android:title="Pay a Bill"/>
+    <item android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings"/>
+    <item android:id="@+id/feedBack"
+        android:icon="@drawable/ic_send_black_24dp"
+        android:title="Feedback"/>
+    <item android:id="@+id/sharekliqr"
+        android:icon="@drawable/ic_share2_black_24dp"
+        android:title="Share KliQr"/>
+    <item android:id="@+id/aboutKliQ"
+        android:icon="@drawable/comment_question"
+        android:title="About KliQr"/>
+
+
+</menu>
