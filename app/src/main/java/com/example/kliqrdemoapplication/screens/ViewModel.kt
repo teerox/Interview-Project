@@ -31,6 +31,9 @@ class ViewModel():ViewModel(){
         return items
     }
 
+    fun getArr(): MutableList<Account> {
+        return arr
+    }
 
     fun getTotalAmount():Long{
         var total:Long = 0
@@ -58,4 +61,7 @@ class ViewModel():ViewModel(){
         }
         return total
     }
+
+
+
 }

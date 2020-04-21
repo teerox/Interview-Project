@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -32,6 +31,8 @@ class OverViewFragment : Fragment() {
     lateinit var binding: FragmentOverViewBinding
      var  value = arrayListOf<PieEntry>()
     var arrayAccount = arrayListOf<Account>()
+
+    var checkArray = arrayListOf<Account>()
     var num = 0
     var totalAmount:Long = 0
     private var dispalyArray = arrayListOf<Account>()
@@ -46,6 +47,8 @@ class OverViewFragment : Fragment() {
 
         // Inflate the layout for this fragment
         totalAmount = myViewModel.getTotalAmount()
+        checkArray = myViewModel.getArr() as ArrayList<Account>
+        Log.e("First Call", checkArray.size.toString())
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_over_view,container,false)
 
         (activity as MainActivity).supportActionBar?.title = getString(R.string.overview)
@@ -70,13 +73,10 @@ class OverViewFragment : Fragment() {
 
                  binding.showMore.setOnClickListener {
                     dispalyArray.clear()
-                    dispalyArray.addAll(arrayAccount)
-
-
-
-
+                    dispalyArray.addAll(checkArray)
                    // checkRecyleView()
                     adapter.notifyDataSetChanged()
+                     binding.cardmore.visibility = GONE
                 }
             }
 
@@ -135,8 +135,10 @@ class OverViewFragment : Fragment() {
 
                 dispalyArray.add(i)
             }
-            binding.showMore.visibility = GONE
+            binding.cardmore.visibility = GONE
        }
+        checkArray = myViewModel.getArr() as ArrayList<Account>
+        Log.e("Second Call", checkArray.size.toString())
         checkRecyleView()
 
     }
